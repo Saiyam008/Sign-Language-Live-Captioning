@@ -1,0 +1,36 @@
+{
+  "name": "Action Reader",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["popup.js"]
+  }],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*",
+        "model/model.json",
+        "model/group1-shard1of2.bin",
+        "model/group1-shard2of2.bin",
+        "popup.html",
+        "popup.js"
+      ],
+      "matches": ["https://www.example.com/*", "https://www.example.de/*"]
+    }],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "desktopCapture",
+    "tabs",
+    "scripting",
+    "videoCapture"
+  ]
+}
