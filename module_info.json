@@ -1,0 +1,8 @@
+{
+  "mainFn": {
+    "function_name": "mainFn",
+    "arguments": {
+      "video": "video_stream"
+    }
+  }
+}
