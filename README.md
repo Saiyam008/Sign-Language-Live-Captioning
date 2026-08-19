@@ -8,12 +8,12 @@ A real-time assistive computer vision and deep learning system that detects and 
 
 ```mermaid
 graph LR
-    Camera[Webcam / Video Stream] --> MediaPipe[MediaPipe Holistic Keypoint Tracking]
-    MediaPipe --> Keypoints[Extracted Pose & Hand Landmarks]
-    Keypoints --> Model[TensorFlow/Keras Sequential Model (action.h5)]
-    Model --> Prob[Softmax Gesture Classification]
-    Prob --> Text[Live Captioning Overlay]
-    Prob --> Audio[PyTTSX3 Text-to-Speech Engine]
+    Camera["Webcam / Video Stream"] --> MediaPipe["MediaPipe Holistic Keypoint Tracking"]
+    MediaPipe --> Keypoints["Extracted Pose & Hand Landmarks"]
+    Keypoints --> Model["TensorFlow/Keras Sequential Model (action.h5)"]
+    Model --> Prob["Softmax Gesture Classification"]
+    Prob --> Text["Live Captioning Overlay"]
+    Prob --> Audio["PyTTSX3 Text-to-Speech Engine"]
 ```
 
 ---
@@ -42,7 +42,7 @@ graph LR
 ├── index.html                                        # Web dashboard interface
 ├── manifest.json / popup.html / popup.js             # Browser extension integration
 ├── Sign Language Presentation.pdf                    # Architecture presentation slides
-└── requirements.txt (or dependencies)
+└── requirements.txt
 ```
 
 ---
